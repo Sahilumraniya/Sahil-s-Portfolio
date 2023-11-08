@@ -152,8 +152,8 @@ const projects = [
   {
     title: "AI maze solver",
     image: AI,
-    github: "",
-    host: "",
+    github: "https://github.com/Sahilumraniya/Maze_Game",
+    host: "https://drive.google.com/file/d/1LrzyO_xEnLR_5kf07WBCzsCL-b5WsLQg/view",
     tech: ["Python", "Pygame"],
     tag: "python",
   },
