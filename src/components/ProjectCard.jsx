@@ -1,5 +1,3 @@
-import React, { useEffect } from "react";
-import { BallCanvas } from "./canvas";
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { fadeIn } from "../utils/motion";
@@ -11,8 +9,11 @@ const ProjectCard = ({ index, title, image, github, host, tech }) => {
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[5px] sheadow-card"
       >
-        <a href={host} target="_black">
-          <div className="w-full rounded overflow-hidden shadow-lg green-pink-gradient">
+        <div
+          options={{ max: 15, scale: 1, speed: 200 }}
+          className="w-full rounded overflow-hidden shadow-lg green-pink-gradient"
+        >
+          <a href={host} target="_black">
             <img
               className="object-fill w-full h-[300px]"
               src={image}
@@ -50,8 +51,8 @@ const ProjectCard = ({ index, title, image, github, host, tech }) => {
                 </a>
               </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </motion.div>
     </Tilt>
   );

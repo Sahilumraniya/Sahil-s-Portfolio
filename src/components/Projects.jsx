@@ -8,11 +8,15 @@ const Projects = () => {
   return (
     <>
       {" "}
-      <p className={styles.sectionHeadText}>Project</p>
-      <div className="mt-10 flex flex-wrap justify-center gap-10">
-        {projects.map((project, index) => {
-          return <ProjectCard key={project.title} index={index} {...project} />;
-        })}
+      <div className="w-full">
+        <p className={styles.sectionHeadText}>Project</p>
+        <div className="mt-10 flex flex-wrap justify-center gap-10">
+          {projects.map((project, index) => {
+            return (
+              <ProjectCard key={project.title} index={index} {...project} />
+            );
+          })}
+        </div>
       </div>
     </>
   );
