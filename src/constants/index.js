@@ -20,6 +20,7 @@ import {
   Movie,
   Trade,
   AI,
+  Startup,
 } from "../assets";
 
 export const navLinks = [
@@ -130,7 +131,7 @@ const projects = [
     image: BM,
     github: "https://github.com/Sahilumraniya/Bhramani-Machinery",
     host: "https://bhramani-machinery.vercel.app/",
-    tech: ["Next JS", "Tailwind CSS"],
+    tech: ["Next JS", "Tailwind CSS", "React JS"],
     tag: "web",
   },
   {
@@ -154,8 +155,16 @@ const projects = [
     image: AI,
     github: "https://github.com/Sahilumraniya/Maze_Game",
     host: "https://drive.google.com/file/d/1LrzyO_xEnLR_5kf07WBCzsCL-b5WsLQg/view",
-    tech: ["Python", "Pygame"],
+    tech: ["Python", "Pygame", "AI"],
     tag: "python",
+  },
+  {
+    title: "Startup-Directory-Web-App",
+    image: Startup,
+    github: "https://github.com/Sahilumraniya/Startup-Directory-Web-App",
+    host: "https://startup-directory-web-app.vercel.app/",
+    tech: ["React JS", "Tailwind CSS", "Node Js", "MongoDB", "Express Js"],
+    tag: "web",
   },
 ];
 

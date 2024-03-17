@@ -1,20 +1,20 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable react/no-unknown-property */
 import { motion } from "framer-motion";
-import { Tilt } from "react-tilt";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../HOC/index";
 import { styles } from "../styles";
+import { CardBody, CardContainer, CardItem } from "./UI/3d-card";
 
-const ServiceCard = ({ index, title, icon }) => {
+const ServiceCard = ({ title, icon }) => {
   return (
-    <Tilt className="xs:w-[250px] w-full">
-      <motion.div
-        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] sheadow-card"
-      >
-        <div
-          options={{ max: 45, scale: 1, speed: 450 }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[200px] flex justify-evenly item-center flex-col"
+    <CardContainer className="dark inter-var w-full sheadow-card">
+      <CardBody className="bg-tertiary relative group/card xs:w-[250px] h-auto w-full dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-tertiary dark:border-white/[0.2] border-black/[0.1] rounded-xl p-6 border ">
+        <CardItem
+          translateZ="100"
+          className="w-full flex items-center justify-center rounded-[20px] min-h-[200px] item-center flex-col gap-y-5"
         >
           <img
             src={icon}
@@ -24,9 +24,9 @@ const ServiceCard = ({ index, title, icon }) => {
           <h3 className="text-white text-[20px] font-bold text-center">
             {title}
           </h3>
-        </div>
-      </motion.div>
-    </Tilt>
+        </CardItem>
+      </CardBody>
+    </CardContainer>
   );
 };
 
@@ -47,9 +47,17 @@ const About = () => {
         fresh tech explorations and evolving projects, reflective of my passion
         for pioneering solutions.
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-6">
         {services.map((s, index) => {
-          return <ServiceCard key={s.title} index={index} {...s} />;
+          return (
+            <motion.div
+              key={s.title}
+              variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+              className="w-full xs:w-[250px]"
+            >
+              <ServiceCard {...s} />{" "}
+            </motion.div>
+          );
         })}
       </div>
     </>

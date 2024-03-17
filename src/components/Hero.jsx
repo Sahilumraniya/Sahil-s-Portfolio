@@ -1,11 +1,16 @@
+/* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import Typical from "react-typical";
+import { BackgroundBeams } from "./UI/background-beams";
 
-const Hero = () => {
+const Hero = ({isMobile}) => {
   return (
     <section className="relative w-screen h-screen mx-auto">
+      <div className="hidden sm:block">
+          <BackgroundBeams />
+        </div>
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl flex flex-row items-start gap-5 `}
       >
@@ -38,7 +43,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      <ComputersCanvas isMobile={isMobile} />
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center hover:cursor-pointer">
         <a href="#about">
