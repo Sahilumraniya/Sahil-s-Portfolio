@@ -28,8 +28,9 @@ const Ball = (props) => {
         />
         <Decal
           position={[0, 0, 1]}
-          map={decal}
           rotation={[2 * Math.PI, 0, 6.25]}
+          scale={1}
+          map={decal}
           flatShading
         />
       </mesh>
@@ -52,6 +53,7 @@ const BallCanvas = ({ icon, tooltipContent }) => {
     <>
       <Canvas
         frameloop="demand"
+        dpr={[1, 2]}
         shadows
         gl={{ preserveDrawingBuffer: true }}
         onMouseEnter={handleMouseEnter}

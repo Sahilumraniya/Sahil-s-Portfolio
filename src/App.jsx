@@ -1,6 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Hero, Navbar, Tech, Projects } from "./components";
 import { useEffect, useState } from "react";
+import Experience from "./components/Experience";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -28,12 +29,13 @@ function App() {
           } bg-cover bg-no-repeat bg-center`}
         >
           <Navbar />
-          <Hero isMobile={isMobile}/>
+          <Hero isMobile={isMobile} />
         </div>
         <div>
           <About />
           <Tech />
         </div>
+        <Experience />
         <Projects />
         <div className="relative w-full z-0">
           <Contact />

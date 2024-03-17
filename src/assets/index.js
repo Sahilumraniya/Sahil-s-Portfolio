@@ -28,6 +28,8 @@ import BM from "./project/BM.png";
 import Movie from "./project/Movie.jpeg";
 import Trade from "./project/Trade.jpeg";
 import Startup from "./project/Startup_Directory.png";
+import Flappy_Bird from "./project/Flappy_Bird.png"
+import Smartters from "./company/Smartters.jpeg"
 
 export {
   logo,
@@ -59,5 +61,7 @@ export {
   BM,
   Movie,
   Trade,
-  Startup
+  Startup,
+  Flappy_Bird,
+  Smartters
 };
