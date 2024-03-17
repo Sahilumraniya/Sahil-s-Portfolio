@@ -20,12 +20,19 @@ import {
   Movie,
   Trade,
   AI,
+  Startup,
+  Flappy_Bird,
+  Smartters,
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
     title: "About",
+  },
+  {
+    id: "experience",
+    title: "Experience",
   },
   {
     id: "projects",
@@ -126,11 +133,27 @@ const testimonials = [
 
 const projects = [
   {
+    title: "Trade-Hub",
+    image: Trade,
+    github: "https://github.com/sahilumraniya/tradehub/",
+    host: "https://trade-hub.vercel.app/",
+    tech: ["React JS", "Tailwind CSS", "Appwrite", "MongoDB"],
+    tag: "web",
+  },
+  {
+    title: "Startup-Directory-Web-App",
+    image: Startup,
+    github: "https://github.com/Sahilumraniya/Startup-Directory-Web-App",
+    host: "https://startup-directory-web-app.vercel.app/",
+    tech: ["React JS", "Tailwind CSS", "Node Js", "MongoDB", "Express Js"],
+    tag: "web",
+  },
+  {
     title: "Manufacturing Business Website",
     image: BM,
     github: "https://github.com/Sahilumraniya/Bhramani-Machinery",
     host: "https://bhramani-machinery.vercel.app/",
-    tech: ["Next JS", "Tailwind CSS"],
+    tech: ["Next JS", "Tailwind CSS", "React JS"],
     tag: "web",
   },
   {
@@ -142,21 +165,35 @@ const projects = [
     tag: "web",
   },
   {
-    title: "Trade-Hub",
-    image: Trade,
-    github: "https://github.com/sahilumraniya/tradehub/",
-    host: "https://trade-hub.vercel.app/",
-    tech: ["React JS", "Tailwind CSS", "Appwrite", "MongoDB"],
-    tag: "web",
-  },
-  {
     title: "AI maze solver",
     image: AI,
     github: "https://github.com/Sahilumraniya/Maze_Game",
     host: "https://drive.google.com/file/d/1LrzyO_xEnLR_5kf07WBCzsCL-b5WsLQg/view",
-    tech: ["Python", "Pygame"],
+    tech: ["Python", "Pygame", "AI"],
+    tag: "python",
+  },
+  {
+    title: "Flappy Bird Game",
+    image: Flappy_Bird,
+    github: "https://github.com/Sahilumraniya/Flappy-Bird-Game",
+    host: "https://github.com/Sahilumraniya/Flappy-Bird-Game/releases/tag/v1.0",
+    tech: ["python", "pygame"],
     tag: "python",
   },
 ];
 
-export { services, technologies, testimonials, projects };
+const experiences = [
+  {
+    title: "MERN Stack Developer Intern",
+    company_name: "Smartters",
+    icon: Smartters,
+    iconBg: "#383E56",
+    date: "february 2024 - Present",
+    points: [
+      "Mastering the Feathers.js 4.8 framework within the MERN stack gaining expertise in building real-time applications and RESTful APIs.",
+      "Through hands-on experience I honed skills in backend development real-time communication RESTful API design and authentication contributing to robust and scalable web solutions",
+    ],
+  },
+];
+
+export { services, technologies, testimonials, projects, experiences };

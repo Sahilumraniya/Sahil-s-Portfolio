@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { technologies } from "../constants";
 import { BallCanvas } from "./canvas";
 import { styles } from "../styles";
@@ -7,7 +8,7 @@ import { motion } from "framer-motion";
 const TechnologyCard = ({ name, imageSrc, index }) => {
   return (
     <motion.div
-      className="w-[100px] border-violet-700 border-2 border-solid rounded-md m-[10px] bg-tertiary cursor-pointer duration-150 overflow-hidden"
+      className="flex-col animate-shimmer items-center justify-center rounded-md border-violet-800 bg-[linear-gradient(110deg,#2d1340,45%,#79467e,55%,#2d1340)] bg-[length:200%_100%] w-[100px] border border-solid m-[10px]  cursor-pointer duration-150 overflow-hidden"
       whileHover={{ scale: 1.05 }} // Animation on hover
       whileTap={{ scale: 0.95 }}
       variants={`${index != 0 ? "left" : "rigth"}`}
@@ -61,7 +62,10 @@ const Tech = () => {
           {technologies.map((technoloy) => {
             return (
               <div className="w-28 h-28 mx-5" key={technoloy.name}>
-                <BallCanvas icon={technoloy.icon} />
+                <BallCanvas
+                  icon={technoloy.icon}
+                  tooltipContent={technoloy.name}
+                />
               </div>
             );
           })}
