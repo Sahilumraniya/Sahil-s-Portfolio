@@ -20,6 +20,7 @@ import {
   Movie,
   Trade,
   AI,
+  startupDirectory
 } from "../assets";
 
 export const navLinks = [
@@ -126,6 +127,14 @@ const testimonials = [
 
 const projects = [
   {
+    title: "Trade-Hub",
+    image: Trade,
+    github: "https://github.com/sahilumraniya/tradehub/",
+    host: "https://trade-hub.vercel.app/",
+    tech: ["React JS", "Tailwind CSS", "Appwrite", "MongoDB"],
+    tag: "web",
+  },
+  {
     title: "Manufacturing Business Website",
     image: BM,
     github: "https://github.com/Sahilumraniya/Bhramani-Machinery",
@@ -134,19 +143,19 @@ const projects = [
     tag: "web",
   },
   {
+    title:"Startup-Directory-Web-App",
+    image: startupDirectory,
+    github: "https://github.com/Sahilumraniya/Startup-Directory-Web-App",
+    host: "https://startup-directory-web-app.vercel.app/",
+    tech: ["React JS", "Tailwind CSS", "MongoDB","Node JS","Express JS"],
+    tag: "web",
+  },
+  {
     title: "Movie Serach",
     image: Movie,
     github: "https://github.com/sahilumraniya/MovieSearch/",
     host: "https://sahilumraniya.github.io/MovieSearch/",
     tech: ["HTML 5", "CSS 3", "JavaScript"],
-    tag: "web",
-  },
-  {
-    title: "Trade-Hub",
-    image: Trade,
-    github: "https://github.com/sahilumraniya/tradehub/",
-    host: "https://trade-hub.vercel.app/",
-    tech: ["React JS", "Tailwind CSS", "Appwrite", "MongoDB"],
     tag: "web",
   },
   {

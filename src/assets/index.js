@@ -26,6 +26,7 @@ import AI from "./project/AI.png";
 import BM from "./project/BM.png";
 import Movie from "./project/Movie.jpeg";
 import Trade from "./project/Trade.jpeg";
+import startupDirectory from "./project/Startup-Directory.jpeg";
 
 export {
   logo,
@@ -56,4 +57,5 @@ export {
   BM,
   Movie,
   Trade,
+  startupDirectory
 };

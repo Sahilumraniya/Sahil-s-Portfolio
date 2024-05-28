@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react-refresh/only-export-components */
 import ProjectCard from "./ProjectCard";
 import { projects } from "../constants";
 import { styles } from "../styles";
