@@ -3,6 +3,7 @@ import backend from "./backend.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import linkedln from "./LinkedIn.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import css from "./tech/css.png";
@@ -26,6 +27,9 @@ import AI from "./project/AI.png";
 import BM from "./project/BM.png";
 import Movie from "./project/Movie.jpeg";
 import Trade from "./project/Trade.jpeg";
+import Startup from "./project/Startup_Directory.png";
+import Flappy_Bird from "./project/Flappy_Bird.png"
+import Smartters from "./company/Smartters.jpeg"
 import startupDirectory from "./project/Startup-Directory.jpeg";
 
 export {
@@ -34,6 +38,7 @@ export {
   mobile,
   web,
   github,
+  linkedln,
   menu,
   close,
   c,
@@ -57,5 +62,8 @@ export {
   BM,
   Movie,
   Trade,
+  Startup,
+  Flappy_Bird,
+  Smartters
   startupDirectory
 };

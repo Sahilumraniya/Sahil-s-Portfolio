@@ -10,7 +10,7 @@ const Projects = () => {
       {" "}
       <div className="w-full">
         <p className={styles.sectionHeadText}>Project</p>
-        <div className="mt-10 flex flex-wrap justify-center gap-10">
+        <div className="dark mt-10 flex flex-wrap justify-center gap-10 w-full">
           {projects.map((project, index) => {
             return (
               <ProjectCard key={project.title} index={index} {...project} />

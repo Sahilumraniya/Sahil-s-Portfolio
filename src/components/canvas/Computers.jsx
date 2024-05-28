@@ -1,4 +1,6 @@
-import { Suspense, useEffect, useState } from "react";
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unknown-property */
+import { Suspense } from "react";
 import { Canvas, extend } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
@@ -21,7 +23,7 @@ const Computers = ({ isMobile }) => {
       />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.95}
+        scale={isMobile ? 0.45 : 0.95}
         position={[0, isMobile ? -4 : -6.75, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
@@ -29,24 +31,7 @@ const Computers = ({ isMobile }) => {
   );
 };
 
-const ComputersCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500px)"); // Fix media query syntax
-    setIsMobile(mediaQuery.matches);
-
-    const handleMediaQueryChange = (e) => {
-      setIsMobile(e.matches);
-    };
-
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
-  }, []);
-
+const ComputersCanvas = ({ isMobile }) => {
   return (
     <Canvas
       frameloop="demand"
