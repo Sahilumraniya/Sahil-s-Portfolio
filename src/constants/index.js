@@ -20,7 +20,6 @@ import {
   Movie,
   Trade,
   AI,
-  Startup,
   Flappy_Bird,
   Smartters,
   startupDirectory
@@ -143,18 +142,10 @@ const projects = [
   },
   {
     title: "Startup-Directory-Web-App",
-    image: Startup,
+    image: startupDirectory,
     github: "https://github.com/Sahilumraniya/Startup-Directory-Web-App",
     host: "https://startup-directory-web-app.vercel.app/",
     tech: ["React JS", "Tailwind CSS", "Node Js", "MongoDB", "Express Js"],
-    tag: "web",
-  },
-  {
-    title: "Trade-Hub",
-    image: Trade,
-    github: "https://github.com/sahilumraniya/tradehub/",
-    host: "https://trade-hub.vercel.app/",
-    tech: ["React JS", "Tailwind CSS", "Appwrite", "MongoDB"],
     tag: "web",
   },
   {
@@ -163,14 +154,6 @@ const projects = [
     github: "https://github.com/Sahilumraniya/Bhramani-Machinery",
     host: "https://bhramani-machinery.vercel.app/",
     tech: ["Next JS", "Tailwind CSS", "React JS"],
-    tag: "web",
-  },
-  {
-    title:"Startup-Directory-Web-App",
-    image: startupDirectory,
-    github: "https://github.com/Sahilumraniya/Startup-Directory-Web-App",
-    host: "https://startup-directory-web-app.vercel.app/",
-    tech: ["React JS", "Tailwind CSS", "MongoDB","Node JS","Express JS"],
     tag: "web",
   },
   {

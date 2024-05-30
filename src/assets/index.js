@@ -27,7 +27,6 @@ import AI from "./project/AI.png";
 import BM from "./project/BM.png";
 import Movie from "./project/Movie.jpeg";
 import Trade from "./project/Trade.jpeg";
-import Startup from "./project/Startup_Directory.png";
 import Flappy_Bird from "./project/Flappy_Bird.png"
 import Smartters from "./company/Smartters.jpeg"
 import startupDirectory from "./project/Startup-Directory.jpeg";
@@ -62,8 +61,7 @@ export {
   BM,
   Movie,
   Trade,
-  Startup,
   Flappy_Bird,
-  Smartters
+  Smartters,
   startupDirectory
 };

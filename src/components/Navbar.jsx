@@ -39,7 +39,8 @@ const Navbar = () => {
                 key={link.id}
                 className={`${
                   active === link.title ? "text-white" : "text-secondary"
-                }  text-[20px] hover:border-b-[3px] hover:border-purple-500 hover:rounded-sm hover:text-purple-200 font-medium cursor-pointer`}
+                } text-[20px] font-medium cursor-pointer transition-all duration-300 ease-in-out border-b-[3px] border-transparent hover:border-purple-500 hover:rounded-sm hover:text-purple-200 transform hover:scale-105                
+                `}
                 onClick={() => {
                   setActive(link.title);
                 }}
@@ -72,7 +73,7 @@ const Navbar = () => {
                     key={link.id}
                     className={`${
                       active === link.title ? "text-white" : "text-secondary"
-                    } hover:border-b-4 hover:border-purple-500 font-poppins text-[15px] font-medium cursor-pointer`}
+                    } hover:border-b-4 hover:border-purple-500 font-poppins text-[15px] font-medium cursor-pointer duration-500 transition-all`}
                     onClick={() => {
                       setActive(link.title);
                       setToggle(!toggle);
