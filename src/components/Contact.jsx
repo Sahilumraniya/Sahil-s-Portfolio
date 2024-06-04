@@ -78,7 +78,7 @@ const Contact = () => {
         >
           <div className="left w-1/2 text-3xl overflow-hidden">
             <div>
-              Contect US
+              Contact US
               <Meteors number={10} />
             </div>
             <div className="flex-col w-[100%] h-full items-center justify-center">
@@ -216,8 +216,8 @@ const Contact = () => {
       <motion.div variants={fadeIn("left", "spring", 0.2, 0.4)}>
         <div className="sm:hidden bg-tertiary rounded-lg overflow-hidden">
           <div className="up h-[50%] w-full text-3xl p-4">
-            <div className="text-center">
-              Contect US
+            <div className="text-center bg">
+              Contact US
               <Meteors number={10} />
             </div>
             <hr className="mt-5" />
