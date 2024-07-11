@@ -190,8 +190,8 @@ const experiences = [
     iconBg: "#383E56",
     date: "february 2024 - Present",
     points: [
-      "Mastering the Feathers.js 4.8 framework within the MERN stack gaining expertise in building real-time applications and RESTful APIs.",
-      "Through hands-on experience I honed skills in backend development real-time communication RESTful API design and authentication contributing to robust and scalable web solutions",
+      "Developed and maintained real-time applications and RESTful APIs using Feathers.js within the MERN stack",
+      "Engineered backend solutions focusing on real-time communication, RESTful API design, and secure authentication",
     ],
   },
 ];

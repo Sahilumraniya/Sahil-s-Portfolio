@@ -45,7 +45,7 @@ const Navbar = () => {
                   setActive(link.title);
                 }}
               >
-                <a href={`#${link.id}`}>{link.title}</a>
+                {link.title === "Projects" ? <Link to="/projects">Projects</Link> : <a href={`/#${link.id}`}>{link.title}</a>}
               </li>
             );
           })}

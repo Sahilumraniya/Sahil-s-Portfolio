@@ -1,47 +1,18 @@
-import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Hero, Navbar, Tech, Projects } from "./components";
-import { useEffect, useState } from "react";
-import Experience from "./components/Experience";
+/* eslint-disable react/jsx-no-undef */
+import { Outlet } from "react-router-dom";
 
 function App() {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500px)"); // Fix media query syntax
-    setIsMobile(mediaQuery.matches);
-
-    const handleMediaQueryChange = (e) => {
-      setIsMobile(e.matches);
-    };
-
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
-  }, []);
+  
   return (
-    <BrowserRouter>
       <div className="relative z-0 bg-primary overflow-x-hidden">
-        <div
-          className={`${
-            isMobile ? "bg-hero-pattern" : ""
-          } bg-cover bg-no-repeat bg-center`}
-        >
-          <Navbar />
-          <Hero isMobile={isMobile} />
-        </div>
-        <div>
-          <About />
-          <Tech />
-        </div>
-        <Experience />
-        <Projects />
-        <div className="relative w-full z-0">
-          <Contact />
+        <div className="w-full bg-violet-300">
+        <div className="w-full">
+          <main className="w-full">
+            <Outlet />
+          </main>
         </div>
       </div>
-    </BrowserRouter>
+      </div>
   );
 }
 

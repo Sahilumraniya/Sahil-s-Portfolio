@@ -1,14 +1,13 @@
-import resumePDF from "../../assets/resume.pdf"; // Import the PDF file
-
 const ResumeDownloadButton = () => {
   const handleDownload = () => {
     // Use the imported PDF file for download
-    const pdfUrl = resumePDF;
+    const pdfUrl = "https://drive.google.com/file/d/1M_sN7FRI2ad4bBiU4fPJ73vqcVQ_EI_M/view?usp=sharing";
 
     // Initiate download by creating a temporary link element
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "resume.pdf"; // Set the desired file name for download
+    link.target = "_blank";
+    link.download = "SahilUmraniya_Resume.pdf"; // Set the desired file name for download
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
