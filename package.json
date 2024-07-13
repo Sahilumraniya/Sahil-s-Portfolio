@@ -15,6 +15,7 @@
     "@react-three/drei": "^9.68.2",
     "@react-three/fiber": "^8.13.0",
     "animate.css": "^4.1.1",
+    "caniuse-lite": "^1.0.30001641",
     "clsx": "^2.1.0",
     "framer-motion": "^10.18.0",
     "maath": "^0.5.3",

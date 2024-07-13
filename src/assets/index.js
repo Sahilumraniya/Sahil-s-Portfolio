@@ -34,7 +34,7 @@ import InsightfulBlog from "./project/InsightfulBlog.jpeg";
 import Feathers from "./tech/feathersjs.png"
 import TypeScript from "./tech/typescript.webp";
 import NextJS from "./tech/nextjs.jpeg";
-import NumPy from "./tech/numpy.png";
+import NumPy from "./tech/Numpy.png";
 import Pandas from "./tech/Pandas.png";
 import Matplotlib from "./tech/Matplotlib.svg";
 import Scikit from "./tech/Scikit_learn.png";
