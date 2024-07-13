@@ -14,7 +14,6 @@ import java from "./tech/java.png";
 import cpp from "./tech/c++.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
-import sql from "./tech/sql.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
@@ -30,38 +29,69 @@ import Trade from "./project/Trade.jpeg";
 import Flappy_Bird from "./project/Flappy_Bird.png"
 import Smartters from "./company/Smartters.jpeg"
 import startupDirectory from "./project/Startup-Directory.jpeg";
+import Learnfinity from "./project/Learnfinity.jpeg";
+import InsightfulBlog from "./project/InsightfulBlog.jpeg";
+import Feathers from "./tech/feathersjs.png"
+import TypeScript from "./tech/typescript.webp";
+import NextJS from "./tech/nextjs.jpeg";
+import NumPy from "./tech/numpy.png";
+import Pandas from "./tech/pandas.png";
+import Matplotlib from "./tech/Matplotlib.svg";
+import Scikit from "./tech/Scikit_learn.png";
+import Prostgres from "./tech/PostgreSQL.png";
+import Spring from "./tech/spring.svg";
+import Tableau from "./tech/tableau.png";
+import Mysql from "./tech/mysql.svg";
+import Docker from "./tech/Docker.png";
+import Express from "./tech/express-js.png";
+import Pygame from "./tech/pygame.png";
 
 export {
-  logo,
-  backend,
-  mobile,
-  web,
-  github,
-  linkedln,
-  menu,
-  close,
-  c,
-  java,
-  cpp,
-  css,
-  sql,
-  python,
-  bootstrap,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  tailwind,
-  user,
-  email,
-  telephone,
-  AI,
-  BM,
-  Movie,
-  Trade,
-  Flappy_Bird,
-  Smartters,
-  startupDirectory
+    logo,
+    backend,
+    mobile,
+    web,
+    github,
+    linkedln,
+    menu,
+    close,
+    c,
+    java,
+    cpp,
+    css,
+    python,
+    bootstrap,
+    git,
+    html,
+    javascript,
+    mongodb,
+    nodejs,
+    reactjs,
+    tailwind,
+    user,
+    email,
+    telephone,
+    AI,
+    BM,
+    Movie,
+    Trade,
+    Flappy_Bird,
+    Smartters,
+    startupDirectory,
+    Learnfinity,
+    InsightfulBlog,
+    Feathers,
+    TypeScript,
+    NextJS,
+    NumPy,
+    Pandas,
+    Matplotlib,
+    Scikit,
+    Prostgres,
+    Spring,
+    Tableau,
+    Mysql,
+    Docker,
+    Express,
+    Pygame
 };

@@ -8,6 +8,7 @@ import App from './App.jsx'
 import './index.css';
 import Home from './page/Home.jsx';
 import ProductPage from './page/ProductPage.jsx';
+import SkillPage from "./page/SkillPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
         path: "/projects",
         element: <ProductPage />,
       },
+      {
+        path: "/skills",
+        element: <SkillPage />
+      }
     ]
   },
 ]);

@@ -11,7 +11,6 @@ import {
   css,
   bootstrap,
   reactjs,
-  sql,
   tailwind,
   nodejs,
   mongodb,
@@ -22,7 +21,18 @@ import {
   AI,
   Flappy_Bird,
   Smartters,
-  startupDirectory
+  startupDirectory,
+  Learnfinity,
+  InsightfulBlog,
+  Feathers,
+  TypeScript,
+  NextJS,
+  Mysql,
+  Prostgres,
+  Docker,
+  Express,
+  Spring,
+  NumPy, Pandas, Matplotlib, Scikit, Tableau, Pygame
 } from "../assets";
 
 export const navLinks = [
@@ -33,6 +43,10 @@ export const navLinks = [
   {
     id: "experience",
     title: "Experience",
+  },
+  {
+    id:"skills",
+    title: "Skills"
   },
   {
     id: "projects",
@@ -50,7 +64,7 @@ const services = [
     icon: web,
   },
   {
-    title: "Andorid Developer",
+    title: "Android Developer",
     icon: mobile,
   },
   {
@@ -61,62 +75,138 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
+    category:"Programing Languages"
+  },
+  {
+    name: "TypeScript",
+    icon: TypeScript,
+    category:"Programing Languages"
+  },
+  {
+    name:"Next JS",
+    icon:NextJS,
+    category:"Web"
   },
   {
     name: "React JS",
     icon: reactjs,
+    category:"Web"
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
+    category:"Web"
   },
   {
     name: "Bootstrap",
     icon: bootstrap,
+    category:"Web"
   },
   {
     name: "Node JS",
     icon: nodejs,
+    category:"Backend"
   },
   {
     name: "MongoDB",
     icon: mongodb,
+    category: "Database"
+  },
+  {
+    name: "My SQL",
+    icon: Mysql,
+    category: "Database"
+  },
+  {
+    name: "PostgreSQL",
+    icon: Prostgres,
+    category: "Database"
+  },
+  {
+    name:"Docker",
+    icon: Docker,
+    category: "tools"
+  },
+  {
+    name: "git",
+    icon: git,
+    category: "tools"
+  },
+  {
+    name:"Feathers",
+    icon: Feathers,
+    category: "Backend"
   },
   {
     name: "C",
     icon: c,
+    category: "Programing Languages"
   },
   {
     name: "C++",
     icon: cpp,
+    category: "Programing Languages"
   },
   {
-    name: "SQL",
-    icon: sql,
-  },
-  {
-    name: "Pyhton",
+    name: "Python",
     icon: python,
+    category: "Programing Languages"
   },
-
   {
     name: "Java",
     icon: java,
+    category: "Programing Languages"
   },
-
   {
-    name: "git",
-    icon: git,
+    name: "Express.js",
+    icon: Express,
+    category: "Backend"
+  },
+  {
+    name: "Spring Boot",
+    icon: Spring,
+    category: "Backend"
+  },{
+    name:"NumPy",
+    icon: NumPy,
+    category: "Data Science"
+  },
+  {
+    name:"Pandas",
+    icon: Pandas,
+    category: "Data Science"
+  },
+  {
+    name: "Matplotlib",
+    icon: Matplotlib,
+    category: "Data Science"
+  },
+  {
+    name: "Scikit-learn",
+    icon: Scikit,
+    category: "Data Science"
+  },
+  {
+    name: "Tableau",
+    icon: Tableau,
+    category: "Data Science"
+  },
+  {
+    name: "Pygame",
+    icon: Pygame,
+    category: "Data Science"
+  },
+  {
+    name: "HTML 5",
+    icon: html,
+    category: "Web"
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+    category: "Web"
   },
 ];
 
@@ -141,12 +231,20 @@ const projects = [
     tag: "web",
   },
   {
-    title: "Startup-Directory-Web-App",
-    image: startupDirectory,
-    github: "https://github.com/Sahilumraniya/Startup-Directory-Web-App",
-    host: "https://startup-directory-web-app.vercel.app/",
-    tech: ["React JS", "Tailwind CSS", "Node Js", "MongoDB", "Express Js"],
-    tag: "web",
+    title: "AI maze solver",
+    image: AI,
+    github: "https://github.com/Sahilumraniya/Maze_Game",
+    host: "https://drive.google.com/file/d/1LrzyO_xEnLR_5kf07WBCzsCL-b5WsLQg/view",
+    tech: ["Python", "Pygame", "AI"],
+    tag: "python",
+  },
+  {
+    title: "Learnfinity",
+    image: Learnfinity,
+    github: "https://github.com/Sahilumraniya/Learnfinity",
+    host: "https://learnfinity.vercel.app/",
+    tech: ["Next JS","Tailwind CSS","React JS"],
+    tag: "web"
   },
   {
     title: "Manufacturing Business Website",
@@ -157,20 +255,12 @@ const projects = [
     tag: "web",
   },
   {
-    title: "Movie Serach",
-    image: Movie,
-    github: "https://github.com/sahilumraniya/MovieSearch/",
-    host: "https://sahilumraniya.github.io/MovieSearch/",
-    tech: ["HTML 5", "CSS 3", "JavaScript"],
+    title: "Startup-Directory-Web-App",
+    image: startupDirectory,
+    github: "https://github.com/Sahilumraniya/Startup-Directory-Web-App",
+    host: "https://startup-directory-web-app.vercel.app/",
+    tech: ["React JS", "Tailwind CSS", "Node Js", "MongoDB", "Express Js"],
     tag: "web",
-  },
-  {
-    title: "AI maze solver",
-    image: AI,
-    github: "https://github.com/Sahilumraniya/Maze_Game",
-    host: "https://drive.google.com/file/d/1LrzyO_xEnLR_5kf07WBCzsCL-b5WsLQg/view",
-    tech: ["Python", "Pygame", "AI"],
-    tag: "python",
   },
   {
     title: "Flappy Bird Game",
@@ -180,6 +270,30 @@ const projects = [
     tech: ["python", "pygame"],
     tag: "python",
   },
+  {
+    title: "Expense manager Flutter App",
+    image: "https://github.com/Sahilumraniya/Expense-manager-Flutter-App/blob/main/screenshots/expensemanager3.jpg?raw=true",
+    github :"https://github.com/Sahilumraniya/Expense-manager-Flutter-App",
+    host: "https://github.com/Sahilumraniya/Expense-manager-Flutter-App",
+    tech: ["Flutter","Dart","Android"],
+    tag: "Mobile Application"
+  },
+  {
+    title: "Movie Search",
+    image: Movie,
+    github: "https://github.com/sahilumraniya/MovieSearch/",
+    host: "https://sahilumraniya.github.io/MovieSearch/",
+    tech: ["HTML 5", "CSS 3", "JavaScript"],
+    tag: "web",
+  },
+  {
+    title: "Insightful-Blog",
+    image: InsightfulBlog,
+    github: "https://github.com/Sahilumraniya/Insightful-Blog",
+    host: "https://sahilumraniya.github.io/Insightful-Blog/",
+    tech: ["HTML 5", "CSS 3", "JavaScript"],
+    tag: "web",
+  }
 ];
 
 const experiences = [
@@ -190,8 +304,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "february 2024 - Present",
     points: [
-      "Developed and maintained real-time applications and RESTful APIs using Feathers.js within the MERN stack",
-      "Engineered backend solutions focusing on real-time communication, RESTful API design, and secure authentication",
+      "Developed and maintained real-time applications and RESTful APIs using Feathers.js within the MERN stack.",
+      "Engineered backend solutions focusing on real-time communication, RESTful API design, and secure authentication.",
+      "Improved application performance by 20% through optimization and refactoring of existing code.",
+      "Collaborated with cross-functional teams to define, design, and ship new features."
     ],
   },
 ];
