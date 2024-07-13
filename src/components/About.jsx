@@ -42,7 +42,7 @@ const About = () => {
         className="mt-4 text-secondary text-[16px] max-w-3xl leading-[30px]"
       >
         Building the future, one line of code at a time! As a forward-thinking
-        3rd-year student, my portfolio highlights a fusion of diverse
+        final-year student, my portfolio highlights a fusion of diverse
         technologies and creative innovations. Explore to witness a blend of
         fresh tech explorations and evolving projects, reflective of my passion
         for pioneering solutions.
