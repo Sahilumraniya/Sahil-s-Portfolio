@@ -302,7 +302,7 @@ const experiences = [
     company_name: "Smartters",
     icon: Smartters,
     iconBg: "#383E56",
-    date: "february 2024 - Present",
+    date: "February 2024 - August 2024",
     points: [
       "Developed and maintained real-time applications and RESTful APIs using Feathers.js within the MERN stack.",
       "Engineered backend solutions focusing on real-time communication, RESTful API design, and secure authentication.",
