@@ -45,6 +45,10 @@ import Mysql from "./tech/mysql.svg";
 import Docker from "./tech/Docker.png";
 import Express from "./tech/express-js.png";
 import Pygame from "./tech/pygame.png";
+import AdvanceJava from "./achievements/Advance_java.jpeg";
+import Oracel from "./achievements/Oracle_eCertificate.jpg";
+import SAP_Certificate from "./achievements/SAP_Certificate.jpg";
+import Smartters_internship from "./achievements/Smartters_internship.jpg";
 
 export {
     logo,
@@ -93,5 +97,9 @@ export {
     Mysql,
     Docker,
     Express,
-    Pygame
+    Pygame,
+    AdvanceJava,
+    Oracel,
+    SAP_Certificate,
+    Smartters_internship
 };

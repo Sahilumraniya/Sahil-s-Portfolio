@@ -32,7 +32,11 @@ import {
   Docker,
   Express,
   Spring,
-  NumPy, Pandas, Matplotlib, Scikit, Tableau, Pygame
+  NumPy, Pandas, Matplotlib, Scikit, Tableau, Pygame,
+  AdvanceJava,
+  Oracel,
+  SAP_Certificate,
+  Smartters_internship
 } from "../assets";
 
 export const navLinks = [
@@ -45,7 +49,7 @@ export const navLinks = [
     title: "Experience",
   },
   {
-    id:"skills",
+    id: "skills",
     title: "Skills"
   },
   {
@@ -77,37 +81,37 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
-    category:"Programing Languages"
+    category: "Programing Languages"
   },
   {
     name: "TypeScript",
     icon: TypeScript,
-    category:"Programing Languages"
+    category: "Programing Languages"
   },
   {
-    name:"Next JS",
-    icon:NextJS,
-    category:"Web"
+    name: "Next JS",
+    icon: NextJS,
+    category: "Web"
   },
   {
     name: "React JS",
     icon: reactjs,
-    category:"Web"
+    category: "Web"
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
-    category:"Web"
+    category: "Web"
   },
   {
     name: "Bootstrap",
     icon: bootstrap,
-    category:"Web"
+    category: "Web"
   },
   {
     name: "Node JS",
     icon: nodejs,
-    category:"Backend"
+    category: "Backend"
   },
   {
     name: "MongoDB",
@@ -125,7 +129,7 @@ const technologies = [
     category: "Database"
   },
   {
-    name:"Docker",
+    name: "Docker",
     icon: Docker,
     category: "tools"
   },
@@ -135,7 +139,7 @@ const technologies = [
     category: "tools"
   },
   {
-    name:"Feathers",
+    name: "Feathers",
     icon: Feathers,
     category: "Backend"
   },
@@ -168,13 +172,13 @@ const technologies = [
     name: "Spring Boot",
     icon: Spring,
     category: "Backend"
-  },{
-    name:"NumPy",
+  }, {
+    name: "NumPy",
     icon: NumPy,
     category: "Data Science"
   },
   {
-    name:"Pandas",
+    name: "Pandas",
     icon: Pandas,
     category: "Data Science"
   },
@@ -223,11 +227,11 @@ const testimonials = [
 
 const projects = [
   {
-    title: "Trade-Hub",
+    title: "Swap & Share",
     image: Trade,
-    github: "https://github.com/sahilumraniya/tradehub/",
-    host: "https://trade-hub.vercel.app/",
-    tech: ["React JS", "Tailwind CSS", "Appwrite", "MongoDB"],
+    github: "https://github.com/Sahilumraniya/ShwapNShare/",
+    host: "https://swapnshare.vercel.app/",
+    tech: ["React JS", "Tailwind CSS", "NodeJs", "MongoDB", "AWS S3", "Express"],
     tag: "web",
   },
   {
@@ -243,7 +247,7 @@ const projects = [
     image: Learnfinity,
     github: "https://github.com/Sahilumraniya/Learnfinity",
     host: "https://learnfinity.vercel.app/",
-    tech: ["Next JS","Tailwind CSS","React JS"],
+    tech: ["Next JS", "Tailwind CSS", "React JS"],
     tag: "web"
   },
   {
@@ -273,9 +277,9 @@ const projects = [
   {
     title: "Expense manager Flutter App",
     image: "https://github.com/Sahilumraniya/Expense-manager-Flutter-App/blob/main/screenshots/expensemanager3.jpg?raw=true",
-    github :"https://github.com/Sahilumraniya/Expense-manager-Flutter-App",
+    github: "https://github.com/Sahilumraniya/Expense-manager-Flutter-App",
     host: "https://github.com/Sahilumraniya/Expense-manager-Flutter-App",
-    tech: ["Flutter","Dart","Android"],
+    tech: ["Flutter", "Dart", "Android"],
     tag: "Mobile Application"
   },
   {
@@ -312,4 +316,39 @@ const experiences = [
   },
 ];
 
-export { services, technologies, testimonials, projects, experiences };
+const achievements = [
+  {
+    image: Oracel,
+    organization: "Oracel",
+    title: "Oracle Cloud Infrastructure 2024 Generative AI Certified Professional",
+    details: "Participated in training on deploying and optimizing generative AI solutions using Oracle Cloud Infrastructure.",
+    date: "July 17, 2024",
+    link: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=1BBB15E94D645DE45156935112528F197168D2E99FF1C73FBB5D6779153A7E32"
+  },
+  {
+    image: SAP_Certificate,
+    organization: "SAP | Code Unnati",
+    title: "Advanced Course Certification: Machine Learning & IoT Training",
+    details: "Participated in training on Machine Learning, IoT, Deep Learning, Computer Vision, and ABAP under the Code Unnati Program.",
+    date: "May 01, 2024",
+    link: "https://codeunnati.edunetfoundation.com/verify-certificate/CU24_8889"
+  },
+  {
+    image: Smartters_internship,
+    organization: "Smartters Software",
+    title: "Successfully Completion of Internship",
+    details: "Successfully completed an internship at Smartters Software, where I gained valuable practical experience by contributing to real-world projects in software development and project management.",
+    date: "August 31, 2024",
+    link: "https://drive.google.com/file/d/1YiFImKXrM7FwNQ0L7i9YBWoLQHUwWwHX/view?usp=drive_link"
+  },
+  {
+    image: AdvanceJava,
+    organization: "Royal Technosoft",
+    title: "Advanace Java",
+    details: "Participated in an Advanced Java course, focusing on complex programming concepts and Java application development.",
+    date: "April 04, 2024",
+    link: "https://certopus.com/c/6f0242c3e46d42078ee4968f5ce8d5e4"
+  }
+]
+
+export { services, technologies, testimonials, projects, experiences, achievements };

@@ -28,9 +28,9 @@ const Hero = ({ isMobile }) => {
                   "Sahil",
                   1000,
                   "Web Developer",
-                  3500,
+                  1000,
                   "Full stack Developer",
-                  5000,
+                  1000
                 ]}
                 loop={Infinity}
               />{" "}

@@ -10,6 +10,7 @@ import { fadeIn } from "../utils/motion";
 import { Meteors } from "./UI/meteors";
 import { Input } from "./UI/input";
 import "animate.css";
+import { styles } from "../styles";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -71,19 +72,19 @@ const Contact = () => {
         theme="dark"
       />
       {/* Desktop */}
-      <motion.div variants={fadeIn("left", "spring", 0.2, 0.42)}>
+      <motion.div variants={fadeIn("left", "spring", 0.2, 0.2)}>
         <div
           id="contact"
-          className="bg-tertiary w-full h-[545px] md:mx-14 md:mt-10 rounded-md p-10 sm:flex sm:flex-row hidden content-between gap-x-2"
+          className="bg-tertiary w-full h-[545px] mx-auto rounded-md p-10 sm:flex sm:flex-row hidden content-between gap-x-2"
         >
-          <div className="left w-1/2 text-3xl overflow-hidden">
-            <div>
-              Contact US
+          <div className="left w-1/2 overflow-hidden">
+            <div className={`${styles.sectionHeadText}`}>
+              Contact Me
               <Meteors number={10} />
             </div>
             <div className="flex-col w-[100%] h-full items-center justify-center">
               <div className="self-center">
-                <div className="flex mt-5 items-center p-5 rounded-[20px] sheadow-card">
+                <div className="flex mt-5 items-center p-5 rounded-[20px] sheadow-card text-xl">
                   <img
                     src={`${telephone}`}
                     alt="phone"
@@ -216,8 +217,8 @@ const Contact = () => {
       <motion.div variants={fadeIn("left", "spring", 0.2, 0.4)}>
         <div className="sm:hidden bg-tertiary rounded-lg overflow-hidden">
           <div className="up h-[50%] w-full text-3xl p-4">
-            <div className="text-center bg">
-              Contact US
+            <div className={`${styles.sectionHeadText} text-center bg`}>
+              Contact Me
               <Meteors number={10} />
             </div>
             <hr className="mt-5" />
