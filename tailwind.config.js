@@ -2,9 +2,6 @@
 /* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 
-const colors = require("tailwindcss/colors");
-const defaultTheme = require("tailwindcss/defaultTheme");
-
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
@@ -66,7 +63,13 @@ module.exports = {
           },
         },
       },
+      backdropBlur: {
+        md: '12px', // You can define custom values here if needed
+      },
     },
+  },
+  variants: {
+    backdropFilter: ['responsive'], // Ensure responsive backdrop is enabled
   },
   plugins: [addVariablesForColors, addSvgPatterns],
 };

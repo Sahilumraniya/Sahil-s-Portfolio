@@ -309,9 +309,8 @@ const experiences = [
     date: "February 2024 - August 2024",
     points: [
       "Developed and maintained real-time applications and RESTful APIs using Feathers.js within the MERN stack.",
-      "Engineered backend solutions focusing on real-time communication, RESTful API design, and secure authentication.",
       "Improved application performance by 20% through optimization and refactoring of existing code.",
-      "Collaborated with cross-functional teams to define, design, and ship new features."
+      "Backend developer for 'Binimise,' a semi-government management portal used by municipal corporations to centralize fleet management, service notification, vendor tracking, complaints, and reporting. I focus on building and optimizing features like task management, complaint handling, report genera on, and custom field (EVA) functionality to enhance resource efficiency and operational effectiveness."
     ],
   },
 ];

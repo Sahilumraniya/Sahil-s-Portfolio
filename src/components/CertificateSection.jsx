@@ -3,6 +3,7 @@ import { styles } from '../styles'; // Adjust the import path accordingly
 import { achievements } from '../constants';
 import { SectionWrapper } from '../HOC';
 import { motion } from 'framer-motion';
+import { fadeIn } from '../utils/motion';
 
 const CertificateSection = () => {
     return (
@@ -18,8 +19,9 @@ const CertificateSection = () => {
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
+                            variants={fadeIn("right", "spring", 0.5 * index, 0.2)}
                             transition={{ duration: 0.5, delay: index * 0.1 }} // Staggered delay for animation
-                            className="bg-[#1d1836be] rounded-lg shadow-lg p-4 transition-transform duration-300 hover:scale-105 hover:bg-[#1d1836]"
+                            className={`bg-[#1d1836be] rounded-lg shadow-lg p-4 transition-transform duration-300 hover:scale-105 hover:bg-[#1d1836]`}
                         >
                             <a href={achievement.link} target="_blank" rel="noopener noreferrer">
                                 <img
@@ -41,7 +43,7 @@ const CertificateSection = () => {
                     ))}
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 
