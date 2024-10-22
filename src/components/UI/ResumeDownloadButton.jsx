@@ -1,7 +1,7 @@
 const ResumeDownloadButton = () => {
   const handleDownload = () => {
     // Use the imported PDF file for download
-    const pdfUrl = "https://drive.google.com/file/d/1M_sN7FRI2ad4bBiU4fPJ73vqcVQ_EI_M/view?usp=sharing";
+    const pdfUrl = "https://drive.google.com/file/d/1ihC8bX6SDFLF4qUDmk42WglKN7jy_i2t/view?usp=drive_link";
 
     // Initiate download by creating a temporary link element
     const link = document.createElement("a");
