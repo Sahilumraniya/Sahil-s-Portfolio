@@ -115,11 +115,11 @@ export const GlareCard = ({imageSrc, name, className}) => {
                 <div
                     className="w-full h-full grid [grid-area:1/1] mix-blend-soft-light [clip-path:inset(0_0_0_0_round_var(--radius))]">
                     <div className={`h-full w-full bg-slate-950 ${className} flex flex-col`}>
-                        <div className="flex-grow-[3] flex justify-center items-center">
+                        <div className="flex-grow-[3] flex justify-center items-center rounded-md">
                             <img
                                 src={imageSrc}
                                 alt={name}
-                                className="w-full object-contain p-[5px] h-full"
+                                className="object-contain p-[5px] rounded-md w-32 h-32"
                             />
                         </div>
                         <div className="flex-grow-[1] flex justify-center items-center">

@@ -36,7 +36,11 @@ import {
   AdvanceJava,
   Oracel,
   SAP_Certificate,
-  Smartters_internship
+  Smartters_internship,
+  Dart,
+  android,
+  flutter,
+  kotlin
 } from "../assets";
 
 export const navLinks = [
@@ -212,6 +216,26 @@ const technologies = [
     icon: css,
     category: "Web"
   },
+  {
+    name: "Dart",
+    icon: Dart,
+    category: "Programing Languages"
+  },
+  {
+    name:"Android",
+    icon: android,
+    category: "Mobile Application"
+  },
+  {
+    name:"Flutter",
+    icon: flutter,
+    category: "Mobile Application"
+  },
+  {
+    name:"Kotlin",
+    icon: kotlin,
+    category: "Programing Languages"
+  }
 ];
 
 const testimonials = [

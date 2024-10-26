@@ -1,8 +1,8 @@
-import {useEffect, useState} from "react";
-import {styles} from "../styles";
-import {technologies} from "../constants";
-import {Navbar} from "../components";
-import {GlareCard} from "../components/UI/glare-card.jsx";
+import { useEffect, useState } from "react";
+import { styles } from "../styles";
+import { technologies } from "../constants";
+import { Navbar } from "../components";
+import { GlareCard } from "../components/UI/glare-card.jsx";
 
 const SkillPage = () => {
     const [filterType, setFilterType] = useState("all");
@@ -32,9 +32,9 @@ const SkillPage = () => {
         <>
             <div className="relative z-0 bg-primary overflow-x-hidden">
                 <div className="bg-cover bg-no-repeat bg-center">
-                    <Navbar/>
+                    <Navbar />
                     <div className="w-full my-24">
-                        <div className="flex justify-around items-center space-x-4">
+                        <div className="flex justify-evenly mx-4 items-center space-x-4">
                             <p className={`${styles.sectionHeadText} text-center`}>Skill</p>
                             <select
                                 value={filterType}
@@ -50,7 +50,7 @@ const SkillPage = () => {
                             </select>
                         </div>
 
-                        <div className="w-full flex flex-wrap justify-center flex-grow-0 gap-10 my-12">
+                        <div className="w-full flex flex-wrap justify-center flex-grow-0 gap-4 md:gap-10 my-12">
                             {filteredTechnologies.map((tech, index) => (
                                 <GlareCard
                                     key={index}
