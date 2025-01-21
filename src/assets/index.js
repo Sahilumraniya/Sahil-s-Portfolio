@@ -49,6 +49,10 @@ import AdvanceJava from "./achievements/Advance_java.jpeg";
 import Oracel from "./achievements/Oracle_eCertificate.jpg";
 import SAP_Certificate from "./achievements/SAP_Certificate.jpg";
 import Smartters_internship from "./achievements/Smartters_internship.jpg";
+import Dart from "./tech/dart.svg";
+import android from "./tech/android.jpeg";
+import flutter from "./tech/flutter.svg";
+import kotlin  from "./tech/kotlin.png";
 
 export {
     logo,
@@ -101,5 +105,9 @@ export {
     AdvanceJava,
     Oracel,
     SAP_Certificate,
-    Smartters_internship
+    Smartters_internship,
+    Dart,
+    android,
+    flutter,
+    kotlin
 };

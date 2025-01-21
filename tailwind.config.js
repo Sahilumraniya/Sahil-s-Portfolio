@@ -18,6 +18,10 @@ module.exports = {
         "meteor-effect": "meteor 5s linear infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        spinSlow: "spin 3s linear infinite", // Slow spin animation
+        fadeIn: "fadeIn 1s ease-out forwards", // Fade-in animation
+        slideIn: "slideIn 1s ease-out forwards", // Slide-in animation
+        blink: "blink 1s step-start infinite", // Blinking dots
       },
       colors: {
         primary: "#050816",
@@ -61,6 +65,19 @@ module.exports = {
           to: {
             backgroundPosition: "-200% 0",
           },
+        },
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+        slideIn: {
+          "0%": { transform: "translateY(20px)", opacity: 0 },
+          "100%": { transform: "translateY(0)", opacity: 1 },
+        },
+        blink: {
+          "0%": { opacity: 0 },
+          "50%": { opacity: 1 },
+          "100%": { opacity: 0 },
         },
       },
       backdropBlur: {

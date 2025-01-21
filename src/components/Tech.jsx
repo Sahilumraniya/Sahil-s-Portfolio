@@ -34,7 +34,7 @@ const Tech = () => {
                     </a>
                 </div>
                 {isMobile ? (
-                    <div className="flex flex-wrap justify-center flex-grow-0 mt-10 gap-x-7">
+                    <div className="flex flex-wrap justify-center flex-grow-0 mt-10 gap-x-4">
                         {technologies.slice(0, 12).map((tech, index) => (
                             <TechnologyCard
                                 key={index}
