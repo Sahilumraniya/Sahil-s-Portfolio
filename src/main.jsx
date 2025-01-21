@@ -1,14 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React, { Suspense, lazy } from 'react';
+import ReactDOM from 'react-dom/client';
+import { HelmetProvider } from 'react-helmet-async';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import App from './App.jsx'
+import App from './App.jsx';
 import './index.css';
-import Home from './page/Home.jsx';
-import ProductPage from './page/ProductPage.jsx';
-import SkillPage from "./page/SkillPage.jsx";
+import Loading from './components/UI/Loading.jsx';
+
+const Home = lazy(() => import('./page/Home.jsx'));
+const ProductPage = lazy(() => import('./page/ProductPage.jsx'));
+const SkillPage = lazy(() => import('./page/SkillPage.jsx'));
 
 const router = createBrowserRouter([
   {
@@ -17,22 +20,36 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Home />
+          </Suspense>
+        ),
       },
       {
         path: "/projects",
-        element: <ProductPage />,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <ProductPage />
+          </Suspense>
+        ),
       },
       {
         path: "/skills",
-        element: <SkillPage />
-      }
-    ]
+        element: (
+          <Suspense fallback={<Loading />}>
+            <SkillPage />
+          </Suspense>
+        ),
+      },
+    ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
   </React.StrictMode>,
-)
+);

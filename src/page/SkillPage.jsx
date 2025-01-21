@@ -3,6 +3,7 @@ import { styles } from "../styles";
 import { technologies } from "../constants";
 import { Navbar } from "../components";
 import { GlareCard } from "../components/UI/glare-card.jsx";
+import { Helmet } from 'react-helmet-async';
 
 const SkillPage = () => {
     const [filterType, setFilterType] = useState("all");
@@ -30,6 +31,27 @@ const SkillPage = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Skills | Sahil Umraniya</title>
+                <meta
+                    name="description"
+                    content="Discover the technologies and tools I specialize in, including React, Node.js, JavaScript, and more. Learn how my skills can bring value to your projects."
+                />
+                <meta name="keywords" content="Skills, React Developer, Node.js, Web Development, JavaScript, Freelance Developer" />
+                <meta property="og:title" content="Sahil Umraniya | Full-Stack Developer & Freelancer" />
+                <meta property="og:description" content="Hi, I'm Sahil Umraniya, a professional software developer specializing in Next, React Node.js, Spring Boot. Explore my portfolio and hire me for your next project." />
+                <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Your+Name+Portfolio" />
+                <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=Your+Name+Portfolio" />
+
+                <meta property="og:url" content="https://sahilumraniya.vercel.app/" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Sahil Umraniya | Full-Stack Developer & Freelancer" />
+                <meta name="twitter:description" content="Hi, I'm Sahil Umraniya, a professional software developer specializing in Next, React Node.js, Spring Boot." />
+                <meta name="author" content="Sahil Umraniya" />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://sahilumraniya.vercel.app/skills" />
+            </Helmet>
+
             <div className="relative z-0 bg-primary overflow-x-hidden">
                 <div className="bg-cover bg-no-repeat bg-center">
                     <Navbar />
