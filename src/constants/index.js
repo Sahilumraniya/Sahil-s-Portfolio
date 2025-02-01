@@ -222,17 +222,17 @@ const technologies = [
     category: "Programing Languages"
   },
   {
-    name:"Android",
+    name: "Android",
     icon: android,
     category: "Mobile Application"
   },
   {
-    name:"Flutter",
+    name: "Flutter",
     icon: flutter,
     category: "Mobile Application"
   },
   {
-    name:"Kotlin",
+    name: "Kotlin",
     icon: kotlin,
     category: "Programing Languages"
   }
@@ -325,6 +325,17 @@ const projects = [
 ];
 
 const experiences = [
+  {
+    title: "MERN Stack Developer",
+    company_name: "Smartters",
+    icon: Smartters,
+    iconBg: "#383E56",
+    date: "August 2024 - Present",
+    points: [
+      "Developed and maintained real-time applications and RESTful APIs using Feathers.js within the MERN stack.",
+      "Improved application performance by 20% through optimization and refactoring of existing code."
+    ],
+  },
   {
     title: "MERN Stack Developer Intern",
     company_name: "Smartters",
